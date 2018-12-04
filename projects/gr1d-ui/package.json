@@ -1,0 +1,39 @@
+{
+  "name": "gr1d-ui",
+  "version": "0.0.1",
+  "description": "GR1D UI",
+  "author": {
+    "email": "candido@moneyex.io",
+    "name": "Cândido Sales Gomes"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "Angular CLI",
+    "GR1D UI"
+  ],
+  "peerDependencies": {
+    "@angular/animations": "^7.1.1",
+    "@angular/cdk": "^7.1.0",
+    "@angular/common": "^7.1.1",
+    "@angular/compiler": "^7.1.1",
+    "@angular/core": "^7.1.1",
+    "@angular/flex-layout": "^7.0.0-beta.19",
+    "@angular/forms": "^7.1.1",
+    "@angular/material": "^7.1.0",
+    "@angular/platform-browser": "^7.1.1",
+    "@angular/platform-browser-dynamic": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=10.9.0 <11.0.0",
+    "yarn": ">=1.9.0 <2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gr1d-io/gr1d-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gr1d-io/gr1d-ui/issues"
+  },
+  "homepage": "https://github.com/gr1d-io/gr1d-ui"
+}
