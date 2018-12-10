@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Gr1dUiComponent } from './gr1d-ui.component';
 import { ButtonModule } from './button/button-module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
-    ButtonModule
+    BrowserAnimationsModule,
+    ButtonModule,
   ],
-  declarations: [Gr1dUiComponent],
-  exports: [Gr1dUiComponent]
+  declarations: [],
+  exports: [BrowserAnimationsModule, ButtonModule]
 })
 export class Gr1dUiModule { }
