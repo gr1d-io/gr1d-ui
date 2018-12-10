@@ -31,6 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11
 
+https://angularfirebase.com/lessons/build-an-angular-library-with-ngpackagr/
+
 ### Build
 
 ```bash

@@ -24,14 +24,6 @@
     "@angular/platform-browser": "^7.1.1",
     "@angular/platform-browser-dynamic": "^7.1.1"
   },
-  "ngPackage": {
-    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-    "lib": {
-      "entryFile": "src/public_api.ts",
-      "styleIncludePaths": ["src/lib/core/style.scss"]
-    },
-    "dest": "dist"
-  },
   "engines": {
     "node": ">=10.9.0 <11.0.0",
     "yarn": ">=1.9.0 <2.0.0"
@@ -43,5 +35,18 @@
   "bugs": {
     "url": "https://github.com/gr1d-io/gr1d-ui/issues"
   },
-  "homepage": "https://github.com/gr1d-io/gr1d-ui"
+  "homepage": "https://github.com/gr1d-io/gr1d-ui",
+  "main": "bundles/gr1d-ui.umd.js",
+  "module": "fesm5/gr1d-ui.js",
+  "es2015": "fesm2015/gr1d-ui.js",
+  "esm5": "esm5/gr1d-ui.js",
+  "esm2015": "esm2015/gr1d-ui.js",
+  "fesm5": "fesm5/gr1d-ui.js",
+  "fesm2015": "fesm2015/gr1d-ui.js",
+  "typings": "gr1d-ui.d.ts",
+  "metadata": "gr1d-ui.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }
