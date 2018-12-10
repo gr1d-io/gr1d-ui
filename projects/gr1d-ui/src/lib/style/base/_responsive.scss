@@ -1,0 +1,5 @@
+@mixin screen($value, $property: max-width) {
+    @media ($property: $value) {
+      @content;
+    }
+  }

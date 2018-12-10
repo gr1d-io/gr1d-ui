@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:old": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng-packagr -p projects/gr1d-ui/package.json"
+    "build": "ng-packagr -p projects/gr1d-ui/package.json",
+    "postbuild": "cpx \"./projects/gr1d-ui/src/lib/style/**/*\" \"./projects/gr1d-ui/dist/style\" && scss-bundle -e ./projects/gr1d-ui/src/lib/style/style.scss -d ./projects/gr1d-ui/dist/styles.scss"
   },
   "private": true,
   "dependencies": {
@@ -35,10 +36,12 @@
     "@angular/cli": "~7.1.0",
     "@angular/compiler-cli": "~7.1.1",
     "@angular/language-service": "~7.1.1",
+    "@types/fs-extra": "^5.0.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "cpx": "^1.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
@@ -48,6 +51,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.4.5",
     "protractor": "~5.4.0",
+    "scss-bundle": "2.4.0",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
