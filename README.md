@@ -1,6 +1,6 @@
 # Gr1d
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
 
 ## Development server
 
@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## References
+
+https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11
+
+### Build
+
+```bash
+ng build gr1d-ui
+```
+
+### Publish
+
+```bash
+ng build gr1d-ui --prod
+cd dist/gr1d-ui
+npm publish
+```
