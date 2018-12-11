@@ -2,13 +2,8 @@
 
 ## Overview
 
-[GR1D UI](https://firebase.google.com) provides the tools and infrastructure
-you need to develop your app, grow your user base, and earn money. The Firebase
-Admin Node.js SDK enables access to Firebase services from privileged environments
-(such as servers or cloud) in Node.js.
-
-For more information, visit the
-[Firebase Admin SDK setup guide](https://firebase.google.com/docs/admin/setup/).
+[GR1D UI](https://firebase.google.com) provides the style and components
+you need to develop your app or site.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
 
