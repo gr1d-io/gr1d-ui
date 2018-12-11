@@ -1,24 +1,110 @@
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 @import '~@angular/material/theming';
+
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+// @include mat-core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$candy-app-primary: mat-palette($mat-indigo);
-$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $candy-app-primary: mat-palette($mat-indigo);
+// $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
-// The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-red);
+// // The warn palette is optional (defaults to red).
+// $candy-app-warn:    mat-palette($mat-red);
 
-// Create the theme object (a Sass map containing all of the palettes).
-$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+// // Create the theme object (a Sass map containing all of the palettes).
+// $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include angular-material-theme($candy-app-theme);
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include angular-material-theme($candy-app-theme);
+
+
+$general-typography: mat-typography-config(
+  $font-family: '"Barlow", sans-serif'
+);
+
+@include mat-core($general-typography);
+@include mat-base-typography($general-typography);
+
+$mat-gr1d-primary-palette: (
+  50: #efe6fd,
+  100: #d3c2fa,
+  200: #b599f7,
+  300: #956ef6,
+  400: #7a4bf4,
+  500: #5a25f0,
+  600: #4c21ea,
+  700: #3417e1,
+  800: #0410dc,
+  900: #0000d6,
+  A100: #efe6fd,
+  A200: #7a4bf4,
+  A400: #5a25f0,
+  A700: #0000d6,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$mat-gr1d-secondary-palette: (
+  50: #e5f8fe,
+  100: #beecfd,
+  200: #97dffc,
+  300: #73d2fb,
+  400: #59c8fd,
+  500: #4abefe,
+  600: #44afee,
+  700: #3c9bda,
+  800: #378ac6,
+  900: #2a6aa5,
+  A100: #e5f8fe,
+  A200: #59c8fd,
+  A400: #73d2fb,
+  A700: #2a6aa5,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$gr1d-app-primary: mat-palette($mat-gr1d-primary-palette);
+$gr1d-app-accent:  mat-palette($mat-gr1d-secondary-palette);
+
+$gr1d-app-theme: mat-light-theme($gr1d-app-primary, $gr1d-app-accent);
+
+@include mat-button-theme($gr1d-app-theme);
+

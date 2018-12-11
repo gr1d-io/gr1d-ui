@@ -1,19 +1,16 @@
-@import '../style/theming/theme';
 @import '../style/base/variable';
 @import '../style/base/responsive';
 
+@import '../style/theming/theme';
 
 .gr1d-button {
-  &button {
-    text-transform: uppercase;
-  }
-  
-  &button.mat-menu-item {
+  text-transform: uppercase;
+
+  &.mat-menu-item {
     text-transform: initial;
   }
   
-  .mat-button {
-    font-size: 14.5px;
+  &.mat-button {
     font-weight: 500;
     letter-spacing: 1.3px;
   
@@ -47,7 +44,6 @@
 
   &.mat-flat-button {
     border-radius: 0;
-    font-size: 14.5px;
     font-weight: 500;
     font-stretch: normal;
     letter-spacing: 1.3px;
@@ -74,8 +70,7 @@
     .mat-flat-button {
       width: 160px;
       height: 36px;
-      font-family: $barlow;
-      font-size: 14.5px;
+      font-family: $font-barlow;
       font-weight: 500;
       line-height: 1.1;
       letter-spacing: 1.3px;

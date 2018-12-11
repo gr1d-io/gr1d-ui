@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "ng-packagr -p projects/gr1d-ui/package.json",
-    "postbuild": "cpx \"./projects/gr1d-ui/src/lib/style/**/*\" \"./projects/gr1d-ui/dist/style\" && scss-bundle -e ./projects/gr1d-ui/src/lib/style/style.scss -d ./projects/gr1d-ui/dist/styles.scss"
+    "postbuild": "cpx \"./projects/gr1d-ui/src/lib/style/**/*\" \"./projects/gr1d-ui/dist/style\" && scss-bundle -e ./projects/gr1d-ui/src/lib/style/style.scss -d ./projects/gr1d-ui/dist/styles.scss",
+    "build:serve" : "npm run build && ng serve"
   },
   "private": true,
   "dependencies": {
