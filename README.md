@@ -50,6 +50,26 @@ Import **GR1D UI** style in `styles.scss`.
 @import '~gr1d-ui/styles';
 ```
 
+## What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```text
+node_modules/
+└── gr1d-ui/
+    ├─ bundles/
+    ├─ esm5/
+    ├─ esm2015/
+    ├─ fesm5/
+    ├─ fesm2015/
+    ├─ lib/
+    ├─ style/
+    ├─ gr1d-ui.d.ts
+    ├─ gr1d-ui.metadata.json
+    ├─ package.json
+    ├─ public_api.d.ts
+    └── styles.scss
+```
 
 ## Examples
 
@@ -84,30 +104,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Please refer to the [CONTRIBUTING page](./CONTRIBUTING.md) for more information
 about how you can contribute to this project. We welcome bug reports, feature
 requests, code review feedback, and also pull requests.
-
-## References
-
-https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11
-
-https://angularfirebase.com/lessons/build-an-angular-library-with-ngpackagr/
-
-https://medium.com/@Dor3nz/compiling-css-in-new-angular-6-libraries-26f80274d8e5
-
-https://github.com/angular/angular-cli/issues/10869
-
-### Build
-
-```bash
-ng build gr1d-ui
-```
-
-### Publish
-
-```bash
-npm run build
-cd projects/gr1d-ui/dist
-npm publish
-```
 
 ## License
 
