@@ -1,6 +1,47 @@
-# Gr1d
+# GR1D UI
+
+## Overview
+
+[GR1D UI](https://firebase.google.com) provides the tools and infrastructure
+you need to develop your app, grow your user base, and earn money. The Firebase
+Admin Node.js SDK enables access to Firebase services from privileged environments
+(such as servers or cloud) in Node.js.
+
+For more information, visit the
+[Firebase Admin SDK setup guide](https://firebase.google.com/docs/admin/setup/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+
+
+## Compatibility
+
+- Angular 7
+- Material 7
+
+## Installation
+
+```bash
+npm install --save gr1d-ui
+```
+
+## Quickstart
+
+Import **GR1D UI** module in Angular app.
+
+```typescript
+import { Gr1dUiModule } from 'gr1d-ui';
+
+(...)
+
+@NgModule({
+  (...)
+  imports: [
+    Gr1dUiModule
+  ]
+  (...)
+})
+
+```
 
 ## Development server
 
@@ -26,6 +67,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Contributing
+
+Please refer to the [CONTRIBUTING page](./CONTRIBUTING.md) for more information
+about how you can contribute to this project. We welcome bug reports, feature
+requests, code review feedback, and also pull requests.
 
 ## References
 
@@ -46,7 +92,11 @@ ng build gr1d-ui
 ### Publish
 
 ```bash
-ng build gr1d-ui --prod
-cd dist/gr1d-ui
+npm run build
+cd projects/gr1d-ui/dist
 npm publish
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
