@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { Gr1dUiModule } from 'gr1d-ui';
+  import { Gr1dUiModule } from 'gr1d-ui';
 
 @NgModule({
   declarations: [

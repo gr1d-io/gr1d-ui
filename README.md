@@ -43,6 +43,18 @@ import { Gr1dUiModule } from 'gr1d-ui';
 
 ```
 
+Import **GR1D UI** style in `styles.scss`.
+```scss
+@import '~bootstrap/dist/css/bootstrap-reboot';
+@import '~bootstrap/dist/css/bootstrap-grid';
+@import '~gr1d-ui/styles';
+```
+
+
+## Examples
+
+Check the [demo](https://stackblitz.com/edit/gr1d-ui).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
